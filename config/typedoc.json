@@ -1,11 +1,10 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "out": "../dist/doc",
   "entryPoints": ["../src"],
   "exclude": [],
   "name": "My Extension Kit Doc 🌀",
   "navigationLinks": {
-    "🚀 Back to Github": "https://github.com/tmslpm/my-extension-kit"
+    "⚡ Back to Github": "https://github.com/tmslpm/my-extension-kit"
   },
   "entryPointStrategy": "expand",
   "visibilityFilters": {
@@ -14,8 +13,7 @@
     "inherited": true,
     "external": true,
     "@alpha": true,
-    "@beta": true,
-    "@ignore": false
+    "@beta": true
   },
   "excludePrivate": true,
   "includeVersion": true,
