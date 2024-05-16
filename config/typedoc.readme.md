@@ -1,11 +1,32 @@
 # 🍀 Hello World
 
-soon...
-
-## 🚦 Get started
+## 🚦 Getting started
 
 This project **uses [NPM](https://docs.npmjs.com/getting-started)
 for dependencies and project management** and **require [NodeJS](https://nodejs.org/fr) >=`v18.7.0`**.
+
+Install the package `my-extension-kit`
+
+```cli
+npm install my-extension-kit
+```
+
+In your `extension.ts` file
+
+```ts
+// unique identifier of your extension
+let id = "my-awesome-extension";
+
+// create the extension
+let v = new BaseExtension(id);
+
+// registre ping command 
+v.register(new PingCmd(id))
+
+export const [activate, deactivate] = v.finalize();
+```
+
+## 📒 Note
 
 This documentation is generated with [TypeDoc](https://typedoc.org/)
 automatically 🍻! After each push on the main branch, a github action
@@ -14,10 +35,8 @@ generates the documentation with TypeDoc.
 We can also trigger generation manually:
 
 ```cmd
-npm run build-docs
+npm run doc
 ```
-
-## 📒 Note
 
 <table style="width:100%;">
     <tr>
