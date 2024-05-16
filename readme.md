@@ -23,4 +23,4 @@ export const [activate, deactivate] = v.finalize();
 
 ### License MIT
 
-See the [license.md](https://github.com/tmslpm/my-extension-kit/license.md)
+See the [license.md](https://github.com/tmslpm/my-extension-kit/blob/main/license.md)
