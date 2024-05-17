@@ -11,4 +11,3 @@ export const [activate, deactivate] = new BaseExtension(id)
   .register(new FiboNumberDecoration(id))
   .register(new TestNotebook(id))
   .finalize();
-
