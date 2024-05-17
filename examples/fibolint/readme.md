@@ -22,3 +22,15 @@ export const [activate, deactivate] = new BaseExtension(id)
 - `./decorations/fibo-number.decoration.ts`
 - `./languages/completions/fibo-number.completion`
 - `./notebooks/test.notebook`
+
+<div align="center">
+
+<img
+  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/fibo-ok.png"
+  alt="codesnap example" />
+
+<img
+  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/fibo-not-ok.png"
+  alt="codesnap example" />
+  
+</div>

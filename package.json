@@ -24,7 +24,7 @@
   },
   "scripts": {
     "compile": "tsc  --declaration -p ./",
-    "deploy": "npm run doc && git add . && git commit -m \"Deploy my-extension-kit@latest\" && git push",
+    "deploy": "npm run doc && git add . && git commit -m \"Deploy my-extension-kit@latest\" && git push --tags",
     "__________________________________________________________0": "",
     "lint": "eslint src --ext ts",
     "doc": "typedoc --tsconfig ./config/typedoc.tsconfig.json --options ./config/typedoc.json --readme ./config/typedoc.readme.md",

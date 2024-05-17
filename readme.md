@@ -33,6 +33,34 @@ export const [activate, deactivate] = v.finalize();
 
 [https://tmslpm.github.io/my-extension-kit/](https://tmslpm.github.io/my-extension-kit/)
 
+<div align="center">
+
+## Example: Extension Fibolink
+
+<img
+  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/fibo-ok.png"
+  alt="codesnap example" />
+
+<img
+  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/fibo-not-ok.png"
+  alt="codesnap example" />
+  
+</div>
+
+<div align="center">
+
+## Example: Extension ImportTreeView
+
+<img
+  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/tree-0.png"
+  alt="codesnap example" />
+
+<img
+  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/tree-1.png"
+  alt="codesnap example" />
+  
+</div>
+
 ### License MIT
 
 See the [license.md](https://github.com/tmslpm/my-extension-kit/blob/main/license.md)
