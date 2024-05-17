@@ -1,3 +1,4 @@
+import { BaseFeature } from "my-extension-kit/base.feature";
 import {
   languages,
   Disposable,
@@ -5,7 +6,6 @@ import {
   CompletionItem,
   CompletionItemProvider,
 } from "vscode";
-import { BaseFeature } from "my-extension-kit/src/base.feature";
 
 export class FiboNumberCompletion extends BaseFeature
   implements CompletionItemProvider<CompletionItem> {

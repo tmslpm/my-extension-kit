@@ -11,7 +11,7 @@ import {
   TextEditorDecorationType,
 } from "vscode";
 import { FibonacciService } from "../services/fibonacci.service";
-import { BaseFeature } from "my-extension-kit/src/base.feature";
+import { BaseFeature } from "my-extension-kit/base.feature";
 
 export class FiboNumberDecoration extends BaseFeature {
 

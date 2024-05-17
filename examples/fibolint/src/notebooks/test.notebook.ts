@@ -8,8 +8,8 @@ import {
 } from "vscode";
 import { TextDecoder, TextEncoder } from 'util';
 import { Disposable } from "vscode";
-import { BaseFeature } from "my-extension-kit/src/base.feature";
 import pino, { Logger } from "pino";
+import { BaseFeature } from "my-extension-kit/base.feature";
 
 /**
  * # Test Feature Notebook

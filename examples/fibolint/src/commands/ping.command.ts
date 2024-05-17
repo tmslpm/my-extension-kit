@@ -1,5 +1,5 @@
+import { BaseFeature } from "my-extension-kit/base.feature";
 import * as vscode from "vscode";
-import { BaseFeature } from "my-extension-kit/src/base.feature";
 
 export class PingCmd extends BaseFeature {
 

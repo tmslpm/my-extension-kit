@@ -27,7 +27,6 @@ console.log(str);
 
 // COMPILE AND NPM PACK 
 exec("npm run compile");
-exec("cd build && npm pack");
 
 if (NPM_VERSION_PACKAGE === packageJson.version) {
   error("\n======================================================"
