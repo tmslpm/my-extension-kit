@@ -7,6 +7,9 @@
   },
   "author": "tmslpm",
   "description": "Utility code to create VsCode extensions",
+  "files": [
+    "out/*.js"
+  ],
   "keywords": [
     "vscode",
     "visual-studio-code",
@@ -22,7 +25,10 @@
     "vscode": "^1.89.0"
   },
   "scripts": {
-    "build": "npm pack --pack-destination=build",
+    "compile": "tsc -p ./",
+    "pack": "npm pack --pack-destination=build ",
+    "publish": "npm run pack&& npm publish ./build/my-extension-kit-0.0.1.tgz",
+    "___________________________________________________________": "",
     "lint": "eslint src --ext ts",
     "doc": "typedoc --tsconfig ./config/typedoc.tsconfig.json --options ./config/typedoc.json --readme ./config/typedoc.readme.md",
     "deploy": "npm run doc && git add . && git commit -m \"Deploy my-extension-kit@latest\" && git push"
