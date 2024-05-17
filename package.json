@@ -1,15 +1,12 @@
 {
   "name": "my-extension-kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/tmslpm/my-extension-kit"
   },
   "author": "tmslpm",
   "description": "Utility code to create VsCode extensions",
-  "files": [
-    "out/*.js"
-  ],
   "keywords": [
     "vscode",
     "visual-studio-code",
@@ -25,13 +22,13 @@
     "vscode": "^1.89.0"
   },
   "scripts": {
-    "compile": "tsc -p ./",
-    "pack": "npm pack --pack-destination=build ",
-    "publish": "npm run pack&& npm publish ./build/my-extension-kit-0.0.1.tgz",
+    "compile": "tsc  --declaration -p ./",
+    "prepare_publish": "ts-node publish.ts",
+    "publish": "cd build && npm publish",
+    "deploy": "npm run doc && git add . && git commit -m \"Deploy my-extension-kit@latest\" && git push",
     "___________________________________________________________": "",
     "lint": "eslint src --ext ts",
-    "doc": "typedoc --tsconfig ./config/typedoc.tsconfig.json --options ./config/typedoc.json --readme ./config/typedoc.readme.md",
-    "deploy": "npm run doc && git add . && git commit -m \"Deploy my-extension-kit@latest\" && git push"
+    "doc": "typedoc --tsconfig ./config/typedoc.tsconfig.json --options ./config/typedoc.json --readme ./config/typedoc.readme.md"
   },
   "devDependencies": {
     "@types/node": "18.x",
@@ -39,6 +36,7 @@
     "@typescript-eslint/eslint-plugin": "^7.7.1",
     "@typescript-eslint/parser": "^7.7.1",
     "eslint": "^8.57.0",
+    "ts-node": "^10.9.2",
     "typedoc": "^0.25.13",
     "typescript": "^5.4.5"
   }
