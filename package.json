@@ -1,6 +1,7 @@
 {
   "name": "my-extension-kit",
   "version": "0.0.3",
+  "DONT_FORGOT_GIT_TAG": "git tag v0.0.3",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/tmslpm/my-extension-kit"
