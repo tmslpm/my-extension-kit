@@ -2,12 +2,16 @@ import * as vscode from 'vscode';
 import { BaseFeature } from "./base.feature";
 
 /**
+ * # BaseExtension
+ * 
+ * Example:
+ * 
  * ```ts
  * let id = "my-awesome-extension";
  * export const [activate, deactivate] = new BaseExtension(id)
  *  .register(new PingCmd(id))
  *  .finalize();
- * ```
+ * ``` 
  */
 export class BaseExtension implements OnActivate, OnDeactivate {
 
@@ -16,8 +20,14 @@ export class BaseExtension implements OnActivate, OnDeactivate {
    */
   private _features: BaseFeature[];
 
+  /**
+   * Unique id of the extension
+   */
+  private readonly _id: string;
+
   public constructor(id: string) {
     this._features = [];
+    this._id = id;
   }
 
   // Life Cycle Event
@@ -68,6 +78,12 @@ export class BaseExtension implements OnActivate, OnDeactivate {
       this.activate.bind(this),
       this.deactivate.bind(this)
     ];
+  }
+
+  // Getter
+
+  public get id(): string {
+    return this._id;
   }
 
 }

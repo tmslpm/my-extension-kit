@@ -2,11 +2,14 @@
 import { ExtensionContext, Disposable } from "vscode";
 
 /**
+ * # BaseFeature
+ * 
  * Abstract base class for feature implementations.
  * To be registered with the base.extension class, 
  * which will manage the lifecycle. 
  * 
- * template
+ * template:
+ * 
  * ```ts
  * export class ImportFoldingLanguage extends BaseFeature {
  *   public constructor(extensionId: string) {

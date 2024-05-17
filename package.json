@@ -2,8 +2,22 @@
   "name": "my-extension-kit",
   "version": "0.0.1",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tmslpm/my-extension-kit"
+  },
   "author": "tmslpm",
-  "description": "Little Framework for create VsCode Extension",
+  "description": "Utility code to create VsCode extensions",
+  "keywords": [
+    "vscode",
+    "visual-studio-code",
+    "extension",
+    "typescript",
+    "vscode-extension",
+    "development",
+    "tool",
+    "typescript-kit",
+    "extension-kit"
+  ],
   "engines": {
     "vscode": "^1.89.0"
   },
