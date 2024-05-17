@@ -10,7 +10,8 @@
   "scripts": {
     "build": "npm pack --pack-destination=build",
     "lint": "eslint src --ext ts",
-    "doc": "typedoc --tsconfig ./config/typedoc.tsconfig.json --options ./config/typedoc.json --readme ./config/typedoc.readme.md"
+    "doc": "typedoc --tsconfig ./config/typedoc.tsconfig.json --options ./config/typedoc.json --readme ./config/typedoc.readme.md",
+    "deploy": "npm run doc && git add . && git commit -m \"Deploy my-extension-kit@latest\" && git push"
   },
   "devDependencies": {
     "@types/node": "18.x",

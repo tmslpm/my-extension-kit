@@ -1,1 +1,5 @@
-*.css linguist-vendored
+.vscode/** linguist-vendored
+.github/** linguist-vendored
+docs/** linguist-vendored
+config/** linguist-vendored
+build/** linguist-vendored

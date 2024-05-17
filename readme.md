@@ -21,6 +21,10 @@ v.register(new PingCmd(id))
 export const [activate, deactivate] = v.finalize();
 ```
 
+## Docs
+
+[https://tmslpm.github.io/my-extension-kit/](https://tmslpm.github.io/my-extension-kit/)
+
 ### License MIT
 
 See the [license.md](https://github.com/tmslpm/my-extension-kit/blob/main/license.md)

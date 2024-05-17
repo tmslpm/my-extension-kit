@@ -29,8 +29,7 @@ export const [activate, deactivate] = v.finalize();
 ## 📒 Note
 
 This documentation is generated with [TypeDoc](https://typedoc.org/)
-automatically 🍻! After each push on the main branch, a github action
-generates the documentation with TypeDoc.
+automatically 🍻! After each push on the main branch.
 
 We can also trigger generation manually:
 

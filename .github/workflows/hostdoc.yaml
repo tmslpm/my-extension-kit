@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} - Deploy static TypeDoc on github page
 
 # Runs after other action, action: {name: NPM_BUILD}
 on:
+  push:
   workflow_run:
     workflows: ["build"]
     types:
