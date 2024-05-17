@@ -8,7 +8,8 @@ import {
 } from "vscode";
 import { TextDecoder, TextEncoder } from 'util';
 import { Disposable } from "vscode";
-import { BaseFeature } from "../base/base.feature";
+import { BaseFeature } from "my-extension-kit/src/base.feature";
+import pino, { Logger } from "pino";
 
 /**
  * # Test Feature Notebook
@@ -41,9 +42,14 @@ import { BaseFeature } from "../base/base.feature";
 export class TestNotebook extends BaseFeature implements NotebookSerializer {
   private _textDecoder?: TextDecoder;
   private _textEncoder?: TextEncoder;
+  private _logger: Logger;
 
   public constructor(extensionId: string) {
     super(extensionId, "my-notebook");
+    this._logger = pino({
+      name: "test:my-notebook",
+      level: "info"
+    });
   }
 
   public onRegister(): Disposable[] {

@@ -1,4 +1,4 @@
-import { BaseExtension } from "./base/base.extension";
+import { BaseExtension } from "my-extension-kit/src/base.extension";
 import { PingCmd } from "./commands/ping.command";
 import { FiboNumberCompletion } from "./languages/completions/fibo-number.completion";
 import { FiboNumberDecoration } from "./decorations/fibo-number.decoration";

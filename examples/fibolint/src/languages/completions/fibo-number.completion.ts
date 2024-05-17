@@ -5,7 +5,7 @@ import {
   CompletionItem,
   CompletionItemProvider,
 } from "vscode";
-import { BaseFeature } from "../../base/base.feature";
+import { BaseFeature } from "my-extension-kit/src/base.feature";
 
 export class FiboNumberCompletion extends BaseFeature
   implements CompletionItemProvider<CompletionItem> {

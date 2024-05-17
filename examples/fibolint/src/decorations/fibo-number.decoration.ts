@@ -11,8 +11,7 @@ import {
   TextEditorDecorationType,
 } from "vscode";
 import { FibonacciService } from "../services/fibonacci.service";
-import { tryParseInt } from "../base/base.utils";
-import { BaseFeature } from "../base/base.feature";
+import { BaseFeature } from "my-extension-kit/src/base.feature";
 
 export class FiboNumberDecoration extends BaseFeature {
 
@@ -100,7 +99,11 @@ export class FiboNumberDecoration extends BaseFeature {
     let numberParsed: number | undefined = undefined;
     while ((match = FiboNumberDecoration.REGEX_NUMBER.exec(text))) {
       numberMathed = match[0];
-      numberParsed = tryParseInt(match[0]);
+      try {
+        numberParsed = parseInt(match[0]);
+      } catch (error) {
+        numberParsed = undefined;
+      }
 
       if (numberParsed !== undefined && !isNaN(numberParsed)) {
 

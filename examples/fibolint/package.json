@@ -74,6 +74,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "my-extension-kit": "^0.0.1",
     "pino": "^9.0.0",
     "rxjs": "^7.8.1"
   }
