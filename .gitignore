@@ -1,8 +1,14 @@
 node_modules
 **/**/node_modules
-build/** 
+
+build
+**/**/build 
 dist
 **/**/dist
+out
+**/**/out
+
+
 .env
 **/**/.env
 env.json
@@ -11,6 +17,7 @@ env.js
 **/**/env.js
 env.ts
 **/**/env.ts
+
 note.md
 
 examples/**/out
