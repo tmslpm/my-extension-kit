@@ -1,0 +1,80 @@
+{
+  "name": "fibolint",
+  "displayName": "fibolint",
+  "description": "code analysis to identify non-Fibonacci numbers (for fun)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onDidChangeTextDocument",
+    "onDidChangeActiveTextEditor"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "fibolint.ping",
+        "title": "Ping! Test extension FiboLint."
+      }
+    ],
+    "colors": [
+      {
+        "id": "fibolint.highlightColorFiboNumber",
+        "description": "highlight color for fibonacci numbers",
+        "defaults": {
+          "dark": "#cc30a5",
+          "light": "#ffabff",
+          "highContrast": "#ff80bf"
+        }
+      },
+      {
+        "id": "fibolint.highlightColorNotFiboNumber",
+        "description": "highlight color for other numbers ",
+        "defaults": {
+          "dark": "#cc2d27",
+          "light": "#ff8f8b",
+          "highContrast": "#ff6e6b"
+        }
+      }
+    ],
+    "notebooks": [
+      {
+        "type": "fibolint.my-notebook",
+        "displayName": "My Notebook",
+        "selector": [
+          {
+            "filenamePattern": "*.notebook"
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test",
+    "test-without-ctx": "npm test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.89.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "pino": "^9.0.0",
+    "rxjs": "^7.8.1"
+  }
+}
