@@ -10,7 +10,7 @@
 
 ## Install  
 
-```cli
+```sh
 npm install my-extension-kit
 ```
 

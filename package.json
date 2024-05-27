@@ -23,23 +23,29 @@
     "vscode": "^1.89.0"
   },
   "scripts": {
-    "compile": "tsc  --declaration -p ./",
-    "deploy": "npm run doc && git add . && git commit -m \"Deploy my-extension-kit@latest\" && git push --tags",
+    "npm:pack": "cd build && npm pack",
+    "npm:_publish": "cd build && npm publish",
+    "dev:clean": "rimraf ./build",
+    "dev:copy:publish": "copyfiles ./package.json ./readme.md ./license.md ./build",
     "__________________________________________________________0": "",
-    "lint": "eslint src --ext ts",
-    "doc": "typedoc --tsconfig ./config/typedoc.tsconfig.json --options ./config/typedoc.json --readme ./config/typedoc.readme.md",
+    "compile": "tsc  --declaration -p ./",
+    "deploy": "npm run doc && git add . && git commit -m \"Update typedoc theme\" && git push --tags",
     "__________________________________________________________1": "",
-    "prepare_publish": "ts-node publish.ts",
-    "and_run_this_after": "cd build && npm publish"
+    "lint": "eslint src --ext ts",
+    "doc": "typedoc --options ./config/typedoc.json"
   },
   "devDependencies": {
     "@types/node": "18.x",
     "@types/vscode": "^1.89.0",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
     "@typescript-eslint/parser": "^7.7.1",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.57.0",
+    "rimraf": "^5.0.7",
     "ts-node": "^10.9.2",
     "typedoc": "^0.25.13",
+    "typedoc-plugin-coverage": "^3.1.1",
+    "typedoc-umlclass": "^0.9.0",
     "typescript": "^5.4.5"
   }
 }

@@ -45,7 +45,8 @@ export abstract class BaseFeature {
 
   /**
    * Creates an instance of `BaseFeatue`.
-   * @param {string} name The name of the completion feature.
+   * @param {string} extensionId The unique identifier of your extension.
+   * @param {string} featureId The unique identifier of your feature.
    */
   public constructor(extensionId: string, featureId: string) {
     this._id = `${extensionId}.${featureId}`;

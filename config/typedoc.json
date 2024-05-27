@@ -1,12 +1,15 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "entryPoints": ["../src"],
-  "exclude": [],
   "name": "My Extension Kit Doc 🌀",
+  "includes": "docs",
+  "entryPoints": ["../src"],
+  "tsconfig": "typedoc.tsconfig.json",
+  "readme": "../readme.md",
+  "plugin": ["typedoc-plugin-coverage", "typedoc-umlclass"],
+  "customCss": "typedoc.css",
   "navigationLinks": {
     "⚡ Back to Github": "https://github.com/tmslpm/my-extension-kit"
   },
-  "entryPointStrategy": "expand",
   "visibilityFilters": {
     "protected": true,
     "private": true,
@@ -15,9 +18,8 @@
     "@alpha": true,
     "@beta": true
   },
-  "excludePrivate": true,
+  "entryPointStrategy": "expand",
   "includeVersion": true,
-  "customCss": "typedoc.css",
   "groupOrder": [
     "References",
     "Modules",
@@ -33,5 +35,88 @@
     "Functions",
     "Methods",
     "Accessors"
-  ]
+  ],
+  "umlClassDiagram": {
+    "style": {
+      "box": {
+        "backgroundColor": "ffffff30",
+        "border": {
+          "width": 1,
+          "color": "33333390",
+          "radius": 15
+        }
+      },
+      "arrow": {
+        "width": 1,
+        "color": "FFC107"
+      },
+      "interface": {
+        "name": {
+          "font": {
+            "size": 19,
+            "bold": true,
+            "italic": true
+          },
+          "color": "5ed875",
+          "backgroundColor": "5ed875"
+        }
+      },
+      "class": {
+        "name": {
+          "font": {
+            "size": 19,
+            "bold": true,
+            "italic": false
+          },
+          "color": "77a8d8",
+          "backgroundColor": "77a8d8"
+        }
+      },
+      "property": {
+        "name": {
+          "font": {
+            "size": 17
+          },
+          "color": "77a8d8"
+        },
+        "type": {
+          "font": {
+            "size": 17
+          },
+          "color": "d7587e"
+        }
+      },
+      "method": {
+        "name": {
+          "font": {
+            "size": 17,
+            "underline": false
+          },
+          "color": "8b6fd8"
+        },
+        "returnType": {
+          "font": {
+            "size": 17,
+            "italic": false
+          },
+          "color": "d7587e"
+        },
+        "parameter": {
+          "name": {
+            "font": {
+              "size": 17,
+              "underline": false
+            },
+            "color": "55c6ee"
+          },
+          "type": {
+            "font": {
+              "underline": false
+            },
+            "color": "d7587e"
+          }
+        }
+      }
+    }
+  }
 }
