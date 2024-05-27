@@ -2,9 +2,7 @@
 
 # My Extension Kit
 
-<img
-  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/codesnap-1.png"
-  alt="codesnap example" />
+![codesnap example](https://raw.githubusercontent.com/tmslpm/my-extension-kit/main/examples/assets/codesnap-1.png)
 
 </div>
 
@@ -37,28 +35,20 @@ export const [activate, deactivate] = v.finalize();
 
 ## Example: Extension Fibolink
 
-<img
-  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/fibo-ok.png"
-  alt="codesnap example" />
+![codesnap example](https://raw.githubusercontent.com/tmslpm/my-extension-kit/main/examples/assets/fibo-ok.png)
 
-<img
-  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/fibo-not-ok.png"
-  alt="codesnap example" />
-  
+![codesnap example](https://raw.githubusercontent.com/tmslpm/my-extension-kit/main/examples/assets/fibo-ok.png)
+
 </div>
 
 <div align="center">
 
 ## Example: Extension ImportTreeView
 
-<img
-  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/tree-0.png"
-  alt="codesnap example" />
+![codesnap example](https://raw.githubusercontent.com/tmslpm/my-extension-kit/main/examples/assets/tree-0.png)
 
-<img
-  src="https://github.com/tmslpm/my-extension-kit/blob/main/examples/assets/tree-1.png"
-  alt="codesnap example" />
-  
+![codesnap example](https://raw.githubusercontent.com/tmslpm/my-extension-kit/main/examples/assets/tree-1.png)
+
 </div>
 
 ### License MIT

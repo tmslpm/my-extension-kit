@@ -3,7 +3,7 @@ import { BaseFeature } from "./base.feature";
 
 /**
  * # BaseExtension
- * 
+ *  
  * Example:
  * 
  * ```ts
